@@ -11,6 +11,7 @@
   --WHITE: #fff;
   --CLOUD: #f4f4fd;
   --CORNFLOWER: #e7e9fc;
+  --LIGHT-SLATE: #8e8f99;
 
   /* Other */
   --items-cards: 3;
@@ -364,6 +365,7 @@ button {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%) scale(1);
+  padding: 24px;
 }
 
 .modal-btn-close {
@@ -397,6 +399,124 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   stroke: currentColor;
 }
+
+.modal-title {
+  color: var(--NAVY-BLUE);
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.modal-form .modal-label {
+  display: block;
+  color: var(--LIGHT-SLATE);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.modal-field {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 38px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent;
+
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  fill: #2e2f42;
+}
+
+/* .modal-form-icon:focus {
+  fill: #4d5ae5;
+} */
+
+.modal-comment {
+  margin-bottom: 18px;
+}
+
+.modal-comment-field {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+
+  color: var(--NAVY-BLUE);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  resize: none;
+}
+
+.modal-comment-field::placeholder {
+  color: #2e2f4266;
+}
+
+.modal-agreement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+
+  color: #8e8f99;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+}
+
+/* .modal-agreement-input 
+.modal-checkbox 
+.modal-checkbox-icon  */
+
+.modal-agreement-link {
+  margin-left: 4px;
+  color: var(--IRIS);
+  text-decoration: underline;
+}
+
+.btn-send {
+  /* display: inline-flex; */
+  padding: 16px 32px;
+  width: 169px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--WHITE, #fff);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+/* .btn-send-accent {
+} */
 
 /**
   |============================
